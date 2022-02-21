@@ -12,7 +12,7 @@
 Clone the project
 
 ```git
-  git clone https://github.com/Janmejay-Joshi/Auto-Attendance-Moodle.git
+  git clone https://github.com/razael25/Auto-Attendance-Moodle.git
 ```
 
 Go to the project directory
