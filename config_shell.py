@@ -17,7 +17,7 @@ def set_credentials() -> None:
 
     """
 
-    LOGIN_URL = "http://op2020.mitsgwalior.in/login/index.php"
+    LOGIN_URL = "https://e-ling.smkn1karawang.sch.id/login/index.php"
 
     print("Credentials:\n")
     USERNAME = input("Enter Moodle Username: ")
@@ -31,7 +31,8 @@ def set_credentials() -> None:
     # Get login csrf token
     result = session_requests.get(LOGIN_URL)
     tree = html.fromstring(result.text)
-    authenticity_token = list(set(tree.xpath("//input[@name='logintoken']/@value")))[0]
+    authenticity_token = list(
+        set(tree.xpath("//input[@name='logintoken']/@value")))[0]
 
     # Create payload
     payload = {
