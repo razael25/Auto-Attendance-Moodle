@@ -77,7 +77,7 @@ Usage:
     USERNAME = Config["credentials"]["username"]
     PASSWORD = Config["credentials"]["password"]
 
-    LOGIN_URL = "http://op2020.mitsgwalior.in/login/index.php"
+    LOGIN_URL = "https://e-ling.smkn1karawang.sch.id/login/index.php"
 
     cred0 = [persist, LOGIN_URL, USERNAME, PASSWORD]
     return cred0
